@@ -14,8 +14,15 @@ import numpy as np
 
 
 # Load data
-summary_data = json.load(open('summary_results.json'))
-df = pd.read_excel('emsci_data_2023.xlsx', sheet_name='qry_rand_CATHERINE_ISNCSCI_Age_')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+summary_path = os.path.join(BASE_DIR, 'summary_results.json')
+excel_path = os.path.join(BASE_DIR, 'emsci_data_2023.xlsx')
+
+with open(summary_path) as f:
+    summary_data = json.load(f)
+
+df = pd.read_excel(excel_path, sheet_name='qry_rand_CATHERINE_ISNCSCI_Age_')
 df['AIS'] = df['AIS'].astype(str).str.strip().str.upper()
 
 stage_order = ['very acute', 'acute I', 'acute II', 'acute III', 'chronic']
