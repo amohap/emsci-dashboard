@@ -358,6 +358,8 @@ def update_transition_charts(transition, ais_filter, sex_filter, age_filter):
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    port = int(os.environ.get('PORT', 8050))
+    app.run_server(debug=False, host='0.0.0.0', port=port)
+    #app.run(debug=False)
 
 
