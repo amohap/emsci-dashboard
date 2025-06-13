@@ -1,0 +1,152 @@
+{
+  "ais_analysis": {
+    "ais_stage_counts": {
+      "acute I": {
+        "A": 1921,
+        "B": 574,
+        "C": 958,
+        "D": 1835,
+        "E": 26,
+        "NAN": 962,
+        "NT": 331
+      },
+      "acute II": {
+        "A": 1687,
+        "B": 462,
+        "C": 703,
+        "D": 1898,
+        "E": 30,
+        "NAN": 1596,
+        "NT": 231
+      },
+      "acute III": {
+        "A": 1255,
+        "B": 333,
+        "C": 451,
+        "D": 1329,
+        "E": 43,
+        "NAN": 3053,
+        "NT": 143
+      },
+      "chronic": {
+        "A": 987,
+        "B": 283,
+        "C": 292,
+        "D": 1391,
+        "E": 73,
+        "NAN": 3465,
+        "NT": 116
+      },
+      "very acute": {
+        "A": 1248,
+        "B": 389,
+        "C": 625,
+        "D": 1023,
+        "E": 12,
+        "NAN": 2890,
+        "NT": 420
+      }
+    },
+    "explicit_transitions_very_acute_to_chronic": {
+      "A -> A": 457,
+      "A -> B": 90,
+      "A -> C": 52,
+      "A -> D": 56,
+      "A -> NAN": 571,
+      "A -> NT": 22,
+      "B -> A": 10,
+      "B -> B": 48,
+      "B -> C": 49,
+      "B -> D": 82,
+      "B -> E": 2,
+      "B -> NAN": 191,
+      "B -> NT": 7,
+      "C -> A": 9,
+      "C -> B": 6,
+      "C -> C": 40,
+      "C -> D": 232,
+      "C -> E": 4,
+      "C -> NAN": 326,
+      "C -> NT": 8,
+      "D -> A": 1,
+      "D -> B": 3,
+      "D -> C": 1,
+      "D -> D": 436,
+      "D -> E": 48,
+      "D -> NAN": 519,
+      "D -> NT": 15,
+      "E -> D": 1,
+      "E -> E": 3,
+      "E -> NAN": 8,
+      "NAN -> A": 441,
+      "NAN -> B": 114,
+      "NAN -> C": 130,
+      "NAN -> D": 513,
+      "NAN -> E": 13,
+      "NAN -> NAN": 1627,
+      "NAN -> NT": 52,
+      "NT -> A": 69,
+      "NT -> B": 22,
+      "NT -> C": 20,
+      "NT -> D": 71,
+      "NT -> E": 3,
+      "NT -> NAN": 223,
+      "NT -> NT": 12
+    },
+    "pairwise_changes": {
+      "acute I -> acute II": {
+        "changed": 2803,
+        "unchanged": 3804
+      },
+      "acute II -> acute III": {
+        "changed": 2948,
+        "unchanged": 3659
+      },
+      "acute III -> chronic": {
+        "changed": 2865,
+        "unchanged": 3742
+      },
+      "very acute -> acute I": {
+        "changed": 4294,
+        "unchanged": 2313
+      },
+      "very acute -> chronic": {
+        "changed": 3984,
+        "unchanged": 2623
+      }
+    },
+    "total_change_summary": {
+      "changed_at_least_once": 6048,
+      "remained_same_all_stages": 559
+    }
+  },
+  "demographic_summary": {
+    "age_stats": {
+      "count": 6560,
+      "max": 94.0,
+      "mean": 48.15,
+      "median": 49.0,
+      "min": 9.0,
+      "missing": 47,
+      "std": 19.15
+    },
+    "cause_distribution": {
+      "counts": {
+        "disc herniation": 14,
+        "haemorragic": 14,
+        "ichemic": 490,
+        "other": 22,
+        "traumatic": 6067
+      },
+      "missing": 0
+    },
+    "sex_distribution": {
+      "counts": {
+        "f": 1549,
+        "m": 5057
+      },
+      "missing": 1
+    },
+    "total_patients": 6607
+  }
+}
